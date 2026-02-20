@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROUP 36 ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Student Grade Calculator</h1>
+    </header>
+
+    <main>
+      <form class="grade-form">
+        <div class="form-group">
+          <label for="studentName">Student Name:</label>
+          <input
+            type="text"
+            id="studentName"
+            placeholder="Enter Student Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="studentRegNo.">Student Registration Number:</label>
+          <input
+            type="text"
+            id="studentRegNo."
+            placeholder="Enter RegNo."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="math">Math marks:</label>
+          <input type="number" id="math" min="0" max="100" required />
+        </div>
+
+        <div class="form-group">
+          <label for="english">English marks:</label>
+          <input type="number" id="english" min="0" max="100" required />
+        </div>
+
+        <div class="form-group">
+          <label for="science">Science marks</label>
+          <input type="number" id="science" min="0" max="100" required />
+        </div>
+
+        <button type="button" onclick="calculateResult()">
+          Calculate Grade
+        </button>
+      </form>
+
+      <div class="result-box" id="output">
+        <p id="result-text">Result must appear here</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;2026 DIT 2203 Group 36. All rights reserved. DIT/2023/57092- Mike
+        Joseph, DIT/2023/64409- Kelvin Maina, DIT/2025/54148- Jamal Githaiga.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
